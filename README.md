@@ -2,7 +2,7 @@
 
 ### This is a script I wrote to speed up git related tasks through interactive dialogs.
 
-[![Watch the video](media/demo.png)](media/demo.mp4)
+[(media/demo.png)](media/demo.mp4)
 
 ## GIT_HELPER'S LOGIC
 
