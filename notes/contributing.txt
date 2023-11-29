@@ -1,0 +1,59 @@
+# Set the remote repository explicitly for your branch:
+  git push --set-upstream <your_fork_url> <your_branch>
+
+# Set remote origin configuration
+  git remote add origin <official_repository_url>
+
+# Set branch main configuration
+  git branch --set-upstream-to=origin/main main
+
+# Set remote upstream configuration
+  git remote add upstream <your_fork_url>
+
+# Set branch fz configuration
+  git branch --set-upstream-to=upstream/<your_branch> <your_branch>
+
+# Keep your local main branch always updated with the changes from the <official_repository_url>, and at the same time, push your changes to your fork (git@github.com:fatualux/pensieriincodice-cdn.git), you can follow these steps:
+
+# Set remote for Upstream (Official Repository):
+  git remote add upstream <official_repository_url>
+
+# Fetch Changes from Upstream:
+  git fetch upstream
+
+# Update Your Local main Branch:
+  git checkout main
+  git merge upstream/main
+
+# Push Changes to Your Fork:
+  git push origin main
+
+### STEPS FOR CONTRIBUTING EFFICIENTLY ###
+
+# Clone the official repository to your local machine:
+
+  git clone <official_repository_url>
+
+#  Change into the cloned repository directory:
+
+  cd <official_repository_directory>
+
+# Add a remote for your fork:
+
+  git remote add my-fork <your_fork_url>
+
+# Create and switch to a new branch for your changes:
+
+  git checkout -b <your_branch>
+
+- Make the necessary changes to the code.
+
+# Commit and Push Changes:
+
+ git commit -m "Your commit message"
+
+ git push <your_fork_url> <your_branch>
+
+# Use the gh pr create command to create a pull request:
+
+  gh pr create --base main --head your_username:your_branch --title "Your PR Title" --body "Your PR Description"
