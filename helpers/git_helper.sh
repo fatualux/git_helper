@@ -136,9 +136,9 @@ ChooseLicense() {
   echo "" >> $WORK_DIR/README.md
   echo "## LICENSE" >> $WORK_DIR/README.md
   echo "" >> $WORK_DIR/README.md
-  echo "This project is covered by $license_name." >> $WORK_DIR/README.md
+  echo "![License: $license_name]($license_badge" >> $WORK_DIR/README.md
   echo "" >> $WORK_DIR/README.md
-  echo "$license_badge" >> $WORK_DIR/README.md
+  echo "This project is covered by $license_name." >> $WORK_DIR/README.md
   if [[ $selected_license == "GPLv2" || $selected_license == "GPLv3" || $selected_license == "LGPLv3" || $selected_license == "AGPLv3" ]]; then
     gnu_version=$(zenity --list --title "Choose a version" --text "Select a version:" \
     --column "Version" "V1" "V2" "V3")
