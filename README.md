@@ -52,7 +52,12 @@ cd git_helper/helpers && ./git_helper
 
 ## DEPENDENCIES
 
-bash git zenity github-cli gitlab-cli xclip
+- bash
+- git
+- zenity
+- github-cli
+- gitlab-cli
+- xclip
 
 ## LICENSE
 
