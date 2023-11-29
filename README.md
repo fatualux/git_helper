@@ -34,6 +34,12 @@ This function creates a pull request. It prompts the user to enter the title, de
 
 This function facilitates contributing to a repository. It prompts the user to choose a directory, enter the name of the repository they want to contribute to, the URL of their forked repository, the branch name, and the commit message. It then adds the official repository as a remote, adds the forked repository as another remote, checks out the branch, adds and commits the changes, and pushes the branch to the forked repository.
 
+### ChooseLicense()
+This function allows users to select a license for a project, byreading the contents of the licenses.json file.
+Then it download the license file from the URL specified by license_url, and append a license section to the README.md.
+Append a license description to the README.md file.
+It provides a user-friendly interface for selecting and applying licenses to a project.
+
 ## INSTALLATION
 
 ```
