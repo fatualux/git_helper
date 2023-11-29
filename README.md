@@ -34,10 +34,6 @@ This function creates a pull request. It prompts the user to enter the title, de
 
 This function facilitates contributing to a repository. It prompts the user to choose a directory, enter the name of the repository they want to contribute to, the URL of their forked repository, the branch name, and the commit message. It then adds the official repository as a remote, adds the forked repository as another remote, checks out the branch, adds and commits the changes, and pushes the branch to the forked repository.
 
-### ListActions()
-
-This function is not defined in the provided code.
-
 ## INSTALLATION
 
 ```
