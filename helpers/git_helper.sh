@@ -274,11 +274,15 @@ Fork() {
 
 PRCreator() {
   UserChooser
+  PlatformChooser
+  RepoNameChooser
+  DirectoryChooser
+  cd $WORK_DIR
   PR_TITLE=$(zenity --entry --title "PR Creator" --text "What is the title of your pull request?" --ok-label="OK" --cancel-label="Cancel")
   PR_BODY=$(zenity --entry --title "PR Creator" --text "What is the description of your pull request?" --ok-label="OK" --cancel-label="Cancel")
   BRANCH=$(zenity --entry --title "PR Creator" --text "What is the name of your branch?" --ok-label="OK" --cancel-label="Cancel")
   BASE=$(zenity --entry --title "PR Creator" --text "What is the name of your base branch?" --ok-label="OK" --cancel-label="Cancel")
-  gh pr create --base "$BASE" --head "$GIT_USER:$BRANCH" --title "$PR_TITLE" --body "$PR_BODY"
+  $CLI pr create --base "$BASE" --head "$GIT_USER:$BRANCH" --title "$PR_TITLE" --body "$PR_BODY"
   echo "PR created!"
 }
 
